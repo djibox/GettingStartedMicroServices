@@ -9,13 +9,16 @@ namespace Mango.Services.CouponAPI.Controllers
     [ApiController]
     public class CouponAPIController : ControllerBase
     {
+
         private readonly AppDbContext _db;
         public CouponAPIController(AppDbContext db)
         {
             _db = db;
         }
 
-        public object Get() 
+        [HttpGet]
+
+        public object Get()
         {
             try
             {
@@ -30,5 +33,24 @@ namespace Mango.Services.CouponAPI.Controllers
             }
             return null;
         }
+
+        [HttpGet]
+        [Route("{id:int}")]
+        public object Get(int id)
+        {
+            try
+            {
+                Coupon objectList = _db.Coupons.First(c=>c.CouponId==id);
+                return objectList;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return null;
+        }
+
     }
 }
