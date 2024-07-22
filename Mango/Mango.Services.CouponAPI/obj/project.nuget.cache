@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cREPMvEtqqc=",
+  "dgSpecHash": "cRYAskjAOK4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\leger\\Source\\Repos\\djibox\\GettingStartedMicroServices\\Mango\\Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj",
+  "projectFilePath": "C:\\Users\\leger\\source\\repos\\djibox\\GettingStartedMicroServices\\Mango\\Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leger\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\leger\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
