@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Mango",
-    "\\Mango\\Mango.Services.CouponAPI",
-    "\\Mango\\Mango.Services.CouponAPI\\Controllers"
+    "\\Mango"
   ],
-  "SelectedNode": "\\Mango\\Mango.Services.CouponAPI\\Controllers\\CouponAPIController.cs",
+  "SelectedNode": "\\Mango\\Mango.sln",
   "PreviewInSolutionExplorer": false
 }
