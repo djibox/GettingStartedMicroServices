@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leger\\source\\repos\\djibox\\GettingStartedMicroServices\\Mango\\Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj": {}
+    "C:\\Users\\sarrk\\Source\\Repos\\djibox\\GettingStartedMicroServices\\Mango\\Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leger\\source\\repos\\djibox\\GettingStartedMicroServices\\Mango\\Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj": {
+    "C:\\Users\\sarrk\\Source\\Repos\\djibox\\GettingStartedMicroServices\\Mango\\Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leger\\source\\repos\\djibox\\GettingStartedMicroServices\\Mango\\Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj",
+        "projectUniqueName": "C:\\Users\\sarrk\\Source\\Repos\\djibox\\GettingStartedMicroServices\\Mango\\Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj",
         "projectName": "Mango.Services.CouponAPI",
-        "projectPath": "C:\\Users\\leger\\source\\repos\\djibox\\GettingStartedMicroServices\\Mango\\Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj",
-        "packagesPath": "C:\\Users\\leger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leger\\source\\repos\\djibox\\GettingStartedMicroServices\\Mango\\Mango.Services.CouponAPI\\obj\\",
+        "projectPath": "C:\\Users\\sarrk\\Source\\Repos\\djibox\\GettingStartedMicroServices\\Mango\\Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj",
+        "packagesPath": "C:\\Users\\sarrk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sarrk\\Source\\Repos\\djibox\\GettingStartedMicroServices\\Mango\\Mango.Services.CouponAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\leger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sarrk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
