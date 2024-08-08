@@ -1,7 +1,7 @@
 ﻿using Mango.Web.Models;
 using Mango.Web.Services.IService;
 using System.Text;
-using newton.json;
+using System.Net;
 using Newtonsoft.Json;
 
 namespace Mango.Web.Services
@@ -23,7 +23,7 @@ namespace Mango.Web.Services
             {
                 message.Content = new StringContent(JsonConvert.SerializeObject(requestDto.Data), Encoding.UTF8, "application/json");
             }
-            HttpResponseMessage?apiResponse =null;
+            HttpResponseMessage? apiResponse = null;
             switch (requestDto.ApiType)
             {
                 case Utility.SD.ApiType.GET:
@@ -38,6 +38,27 @@ namespace Mango.Web.Services
                 case Utility.SD.ApiType.DELETE:
                     message.Method = HttpMethod.Delete;
                     break;
+            }
+
+            apiResponse = await client.SendAsync(message);
+            switch (apiResponse.StatusCode)
+            {
+                case HttpStatusCode.NotFound:
+                    return new() { IsSuccess = false, Message = "Not Found" };
+                    break;
+                case HttpStatusCode.Forbidden:
+                    return new() { IsSuccess = false, Message = "Access Denied" };
+                    break;
+                case HttpStatusCode.Unauthorized:
+                    return new() { IsSuccess = false, Message = "Unauthorized" };
+                    break;
+                case HttpStatusCode.InternalServerError:
+                    return new() { IsSuccess = false, Message = "Internal Server Error" };
+                    break;
+                default:
+                    var apiContent = await apiResponse.Content.ReadAsStringAsync();
+                    var apiResponseDto = JsonConvert.DeserializeObject<ResponseDto>(apiContent);
+                    return apiResponseDto;
             }
         }
     }
