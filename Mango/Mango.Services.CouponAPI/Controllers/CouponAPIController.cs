@@ -24,7 +24,6 @@ namespace Mango.Services.CouponAPI.Controllers
         }
 
         [HttpGet]
-
         public ResponseDto Get()
         {
             try
@@ -48,13 +47,11 @@ namespace Mango.Services.CouponAPI.Controllers
             {
                 Coupon _object = _db.Coupons.First(c=>c.CouponId==id);
                 _response.Result = _mapper.Map<CouponDto>(_object);
-
             }
             catch (Exception ex)
             {
                 _response.IsSuccess = false;
                 _response.Message = ex.Message;
-
             }
             return _response;
         }
@@ -87,7 +84,6 @@ namespace Mango.Services.CouponAPI.Controllers
                 _db.Coupons.Add(obj);
                 _db.SaveChanges();
                 _response.Result = _mapper.Map<CouponDto>(obj);
-
             }
             catch (Exception ex)
             {
